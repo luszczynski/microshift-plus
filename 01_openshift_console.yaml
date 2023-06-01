@@ -60,7 +60,7 @@ spec:
     spec:
       containers:
       - name: openshift-console-app
-        image: quay.io/openshift/origin-console:4.8.0
+        image: quay.io/openshift/origin-console:4.13.0
         env:
         - name: BRIDGE_USER_AUTH
           value: disabled

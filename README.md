@@ -39,6 +39,12 @@ podman exec microshift oc get route
 ./macos_purge_microshift.sh
 ```
 
+### Using OpenShift Local
+
+```
+oc label namespace kube-system pod-security.kubernetes.io/enforce=privileged
+```
+
 ## Sample Output
 ```
 Creating Podman Machine...

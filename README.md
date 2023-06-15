@@ -42,7 +42,7 @@ podman exec microshift oc get route
 ### Using OpenShift Local
 
 ```
-oc label namespace kube-system pod-security.kubernetes.io/enforce=privileged
+oc label namespace default pod-security.kubernetes.io/enforce=privileged
 ```
 
 ## Sample Output

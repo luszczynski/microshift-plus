@@ -87,7 +87,7 @@ spec:
   selector:
     app: openshift-console
   ports:
-  - port: 443
+  - port: 8443
     targetPort: 9000
 ---
 kind: Route
@@ -96,7 +96,6 @@ metadata:
   name: openshift-console
   namespace: default
 spec:
-  #host: openshift-console.apps.127.0.0.1.nip.io
   to:
     kind: Service
     name: openshift-console-service
